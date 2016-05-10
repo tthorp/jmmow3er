@@ -1,0 +1,135 @@
+/* reset some things-------------------------------------*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;	outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+fieldset,img{border:0;}
+ol,ul{list-style-type:none;margin:0;padding:0;}
+
+/*wrappers - page or section containers*/
+#wrap{background-color:#ffffff;text-align:left;width:960px;margin:0 auto;padding:0;}
+	#header{width:960px;height:120px;background:#ffffff ;}
+	#main{margin:0 0 0 20px;width:940px;position:relative;}
+		#nav{float:left;width:220px;}
+			#nav ul{margin:0 0 20px 5px;}
+		#post{float:left;width:680px;}
+		.rightcol{float:right;width:210px;margin:10px 0 30px 20px;}
+		.fullprice{text-decoration:line-through;}
+	#footer{width:960px;margin:2	5px auto;text-align:center;}
+/* format some html elements-----------------------------*/
+body{font-family:arial, verdana, sans-serif;font-size:80%;line-height:160%;color:#111;background:url('/img/grass.jpg')repeat;}
+a{color:#933;text-decoration:none;}
+em{font-style:italic;}
+a:visited{color:#933;text-decoration:none;}
+a:hover{color:#639;text-decoration:underline;}
+h1, h2, h3, h4, h5, h6{color:#2C6230;}
+h1{margin:0px 0px 15px 0px;font-size:140%;}
+h2{font-size:130%;}
+h3{font-size:120%;}
+#post ol{list-style-type:decimal;list-style-position:inside;margin:20px 0;}
+code{}
+img.right{float:right;}
+strong{font-weight:bold;}
+form, select{display:inline;margin:0.1em;}
+textarea{float:left;margin:auto;display:block;width:95%;}
+fieldset{padding:0.5em;margin:0.5em 0em;border:1px solid #cccccc;}
+legend{font-weight:bold;padding:0.3em;}
+label, h4.optionName{line-height:1.5em;padding:0.2em;}
+label.checkboxLabel, label.radioButtonLabel{margin:0.5em 0.3em;}
+#logo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg{float:left;}
+input{width:auto !important; /*hack for Zen Cart resizing buttons*/}
+label.inputLabel{width:9em;float:left;}
+label.inputLabelPayment{width:14em;float:left;padding-left:2.5em;}
+label.selectLabel, LABEL.switchedLabel, LABEL.uploadsLabel{width:11em;float:left;}
+#checkoutPayment LABEL.radioButtonLabel{font-weight:bold;}
+address{padding:0.5em;font-style:normal;}
+.clear{clear:both;}
+hr{height:1px;margin-top:0.5em;border:none;border-bottom:1px solid #9a9a9a;}
+.products li a{text-transform:lowercase;}/**/
+.product{float:left;width:320px;border:1px solid #047;margin:10px 10px 0 0;text-align:center;min-height:375px;}
+	.product h3, .product p{margin:20px 0;}
+	.product h2{margin:50px 0;}
+
+/*navigation*/
+.navSplitPagesResult{}
+.navSplitPagesLinks{}
+.navNextPrevCounter{margin:0em;}.navNextPrevList{display:inline;white-space:nowrap;margin:0;padding:0.5em 0em;list-style-type:none;}
+#navMainWrapper, #navSupp{display:none;}/*, #navSuppWrapper, #navCatTabsWrapper{margin:0em;padding:5px 0;background-color:#fff;border-bottom:1px solid #ccc;}#navCatTabsWrapper{background-color:#ffffff;color:#9a9a9a;}*/
+#navMain ul, #navSupp ul, #navCatTabs ul{margin:0;padding:0.3em 0em;list-style-type:none;}
+#navMain ul li, #navSupp ul li, #navCatTabs ul li{display:inline;}
+#navMain ul li a, #navSupp ul li a, #navCatTabs ul li a{padding:0em 0.5em;margin:0;}
+#navCatTabs ul li a{color:#9a9a9a;}
+#navEZPagesTOCWrapper{font-weight:bold;float:right;height:1%;border:1px solid #9a9a9a;}
+#navEZPagesTOC ul{margin:0;padding:0.5em 0em;list-style-type:none;line-height:1.5em;}
+#navEZPagesTOC ul li{white-space:nowrap;}
+#navEZPagesTOC ul li a{padding:0em 0.5em;margin:0;}
+#navMainSearch, #navCategoryIcon, .buttonRow, #indexProductListCatDescription{}
+#navBreadCrumb{background-color:#f5f5f5;padding:3px 0 3px 3px;border:1px solid #ccc;}
+#navEZPagesTop{background-color:#fff;padding:0.5em;border-top:1px solid #ccc;}
+#navColumnOne, #navColumnTwo{background-color:transparent;}
+
+/*The main content classes*/
+#navColumnOne, #navColumnTwo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .alert{vertical-align:top;}
+#productDescription, .shippingEstimatorWrapper{}
+.alert{color:#c00;}
+.advisory{}
+.important{font-weight:bold;}
+.notice{}
+.rating{}
+.gvBal{float:right;}
+#bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive, #bannerSix{}
+.centerColumn{padding:3px;}
+.smallText, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP{}
+
+/*Image Display*/
+#productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage{margin:0em 1em 1em 0em ;}
+.categoryIcon{}
+#cartImage{margin:0.5em 1em;}
+
+/*Attributes*/
+.attribImg{width:20%;margin:0.3em 0em;}
+.attributesComments{}
+
+/*list box contents*/
+.centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew{margin:1em 0em;}
+.centerBoxWrapper{/*border:1px solid #9a9a9a;*/margin:1.1em 0;height:1%;}
+
+/*sideboxes*/
+.columnLeft{}
+h3.leftBoxHeading, h3.leftBoxHeading a, h3.rightBoxHeading, h3.rightBoxHeading a{margin:0;padding:3px;font-weight:normal;font-style:italic;}
+#manufacturersHeading, #currenciesHeading, #musicgenresHeading, #recordcompaniesHeading, #searchHeading, #search-headerHeading{}
+.leftBoxHeading, .centerBoxHeading, .rightBoxHeading{/*background-color:#f5f5f5;*/border-bottom:1px solid #000;}
+.leftBoxContainer, .rightBoxContainer{border:1px solid #ccc;margin:0 0 1em 0;}
+.sideBoxContent{background-color:#ffffff;padding:0.4em;}
+.centeredContent, TH, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, #navCatTabsWrapper, #navEZPageNextPrev, #bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive, #bannerSix, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP, .center, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, .cartTotalsDisplay, #cartBoxGVBalance, .accountQuantityDisplay, .ratingRow, LABEL#textAreaReviews, #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .gvBal, .attribImg{text-align:center;}
+#bestsellers ol{padding:0;margin:0 0 0 1.5em;}
+#upProductsHeading{text-align:left;}
+#upDateHeading{text-align:right;}
+
+/* categories box parent and child categories */
+span.category-subs-parent{font-style:italic;}
+span.category-subs-selected{font-style:italic;}
+
+/*misc*/
+.back{float:left;}
+.forward{float:right;}
+.bold{font-weight:bold;}
+.rowOdd{background-color:#f5f5f5;vertical-align:top;}
+.rowEven{background-color:#fff;vertical-align:top;}
+caption{}
+#myAccountGen li, #myAccountNotify li{margin:0;} 
+.accountTotalDisplay, .accountTaxDisplay{width:20%;text-align:right;}
+.accountQuantityDisplay{width:10%;vertical-align:top}
+tr.tableHeading{background-color:#eee;}
+#prevOrders td{border-bottom:1px solid #ccc;padding:0 .5em 0 0;}
+.productListing-rowheading{background-color:#eee;}
+.productListing-data{padding:.5em 0;}
+.productListing-data h3{margin:0 0 1em 0;}
+#siteMapList{width:90%;float:right;}
+.ratingRow{margin:1em 0em 1.5em 0em;}
+label#textAreaReviews{font-weight:normal;margin:1em 0em;}
+#popupShippingEstimator, #popupSearchHelp, #popupAdditionalImage, #popupImage, #popupCVVHelp, #popupCouponHelp, #popupAtrribsQuantityPricesHelp, #infoShoppingCart{background-color:#ffffff;}
+
+/*warnings, errors, messages*/
+.messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution{padding:.2em .5em;border:1px solid #000;}
+.messageStackWarning, .messageStackError{background-color:#ff9;color:#c00;padding:0 .5em;}
+.messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img{display:none;}
+.messageStackSuccess{background-color:#9f9;color:#070;}
+.messageStackCaution{background-color:#FFFF66;color:#000000;}

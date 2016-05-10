@@ -1,0 +1,52 @@
+#custom error document
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+# add www. to visitors who request the bare domain
+RewriteCond %{HTTP_HOST} ^jmmower.com
+RewriteRule (.*) http://www.jmmower.com/$1 [R=301,L]
+
+#RULES SETUP TO PRESERVE THE CATEGORY ID NUMBER BUT REWRITE THE URL
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=index&cPath=([0-9]*)$
+RewriteRule ^(.*)$ http://www.jmmower.com/products.php?cat=%1 [R=301,L]
+
+#RULES SETUP TO PRESERVE THE PRODUCT ID NUMBER BUT REWRITE THE URL
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=product_info&cPath=([0-9]*)&products_id=([0-9]*)$
+RewriteRule ^(.*)$ http://www.jmmower.com/product.php?id=%2 [R=301,L]
+
+#CUSTOM RULES WITH LITTLE OR NO PATTERN. REDIRECT THEM AND STRIP THE PARAMETERS
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=1$
+RewriteRule ^(.*)$ http://www.jmmower.com/locke_70_reverse.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=2$
+RewriteRule ^(.*)$ http://www.jmmower.com/locke_30_standard.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=3$
+RewriteRule ^(.*)$ http://www.jmmower.com/locke_maxi_ii.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=4$
+RewriteRule ^(.*)$ http://www.jmmower.com/locke_30_60.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=5$
+RewriteRule ^(.*)$ http://www.jmmower.com/index.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=6$
+RewriteRule ^(.*)$ http://www.jmmower.com/blade_sharpener.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=7$
+RewriteRule ^(.*)$ http://www.jmmower.com/locke_catalogs.php$2? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^main_page=page&id=8$
+RewriteRule ^(.*)$ http://www.jmmower.com/testimonials.php$2? [R=301,L]
+

@@ -1,0 +1,14 @@
+body{background-color:#FFF;margin:0;padding:0;}
+h1,h2,h3{color:green;}
+a{position:absolute;height:200px;width:160px;top:10px;text-decoration:none;font-size:200px;}
+a:hover{background-color:#BBB;opacity:0.5;-moz-border-radius: 5px;-webkit-border-radius: 5px;border: 3px solid #444;}
+/*define placement by row*/
+a#one,a#two,a#three,a#four{top:140px;}
+a#five,a#twelve{top:395px;}
+a#six,a#eleven{top:640px;}
+a#seven,a#eight,a#nine,a#ten{top:890px;}
+/*define placement by column*/
+a#one,a#ten,a#eleven,a#twelve{left:15px;}
+a#two,a#nine{left:225px;}
+a#three,a#eight{left:425px;}
+a#four,a#five,a#six,a#seven{left:625px;}
